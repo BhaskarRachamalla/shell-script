@@ -8,6 +8,16 @@ subtract="$(($1-$2))"
 echo "the sum of two numbers is:$sum"
 echo "the subtraction of two numbers is:$subtract"
 
+echo "using if conditions"
+
+if [$sum -gte 100]
+then 
+echo "first class"
+else 
+echo "second class"
+fi
+
+
 #read  USER
 #echo "user name is $USER"
 #read -s PASS
