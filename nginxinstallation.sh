@@ -14,7 +14,7 @@ fi
 
 dnf install nginx -y 
 
-if [ $? -ne 0 ]
+if [ $? -eq 0 ]
 then 
    echo "nginx instalallation is failed.."
    exit 1
@@ -24,7 +24,7 @@ fi
 
 dnf remove nginx -y
 
-if [ $? -ne 0 ]
+if [ $? -eq 0 ]
 then 
    echo "need to remove nginx"
 else
