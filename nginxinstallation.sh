@@ -35,3 +35,4 @@ dnf module list
 if [ $? -eq 0 ]
 then echo "list of available packages"
 fi
+
