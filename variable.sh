@@ -1,10 +1,7 @@
 #!/bin/bash
 
-echo "Addition of two numbers 20 and 30"
-
-$i=20
-$j=30
-
-$add = $i+$j
-
-echo "the sume of numbers :" $add
+PERSON1=ramesh
+PERSON2=suresh
+echo "$PERSON1 is best friend of $PERSON2"
+echo "$PERSON2 and $PERSON1 are learning devops"
+echo "$PERSON1 gives moeny to $PERSON2"
