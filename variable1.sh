@@ -7,7 +7,9 @@ subtract="$(($1-$2))"
 echo "the sum of two numbers is:$sum"
 echo "the subtraction of two numbers is:$subtract"
 
-read $1
-read $2
+read USER
+echo "user name is $USER"
+read PASS
+echo "password is $PASS"
 
 
