@@ -21,6 +21,6 @@ echo "total  number of elements present in array:${number[@]}"
 
 add="$((${number[0]}+${number[4]}))"
 
-echo "addition of arrays for 1 to 5 numbers is:$add"
+echo "addition of arrays for ${number[0]} and ${number[4]} to  numbers is:$add"
 
 
