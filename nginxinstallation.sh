@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dnf install nginx -y 
+
 
 id=$(id -u)
 
@@ -9,4 +9,13 @@ then
   echo "this user is needs root access"
 else 
   echo "super user"
+fi
+
+dnf install nginx -y 
+
+if [ $? -ne 0 ]
+then 
+   echo "nginx instalallation is success.."
+else
+   echo "nginx installation is failed.."
 fi
