@@ -34,5 +34,5 @@ then
     exit 1
 else 
     echo "installion of git is success..."
-
+fi
     
