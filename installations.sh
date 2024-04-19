@@ -2,11 +2,13 @@
 
 echo "install mysql"
 
+
+
+USERid=$(id -u)
+
 dnf install mysql -y 
 
-id=$(id -u)
-
-if [ $id -ne 0]
+if [ $USERid -ne 0]
 then 
     echo "you dont have access to root"
 else
