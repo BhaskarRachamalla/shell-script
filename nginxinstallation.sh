@@ -21,3 +21,12 @@ then
 else
    echo "nginx installation is success.."
 fi
+
+dnf remove nginx -y
+
+if [ $? -ne 0 ]
+then 
+   echo "need to remove nginx"
+else
+   echo "nginx not removed"
+fi
