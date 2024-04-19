@@ -13,8 +13,10 @@ echo "the subtraction of two numbers is:$subtract"
 #read -s PASS
 #echo "password is $PASS"
 
+echo "this is array"
+
 number=("1" "2" "3" "4" "5")
 
-add="$((${number[0]}+${number[4]}))"
+add="$((${number[0]}+${number[@]}))"
 
-echo "addition of number is:$add"
+echo "addition of arrays for 1 to 5 numbers is:$add"
