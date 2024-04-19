@@ -9,5 +9,5 @@ i=1
 while [ $i -ge 4 ];
 do
 echo $i
-((i++))
+((i--))
 done
