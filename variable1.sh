@@ -10,7 +10,7 @@ echo "the subtraction of two numbers is:$subtract"
 
 echo "using if condition"
 
-if [ $sum -gte 100 ]
+if [ $sum -gt 100 ]
 then 
 echo "first class"
 else 
