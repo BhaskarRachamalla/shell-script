@@ -11,8 +11,5 @@ if ($sum -gte 100)
 {
 echo "first class"
 }
-else
-{ 
-echo "fail"
-}
+fi
 
