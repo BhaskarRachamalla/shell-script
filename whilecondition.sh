@@ -1,7 +1,13 @@
 #!/usr/bin/bash
 
-file=tmp.txt
-while read -r line;
+i=1
+
+# the number 4 can be the limit to
+
+# iterate the loop
+
+while [ $i -le 4 ];
 do
-echo $line
-done < “$file”
+echo $i
+((i++))
+done
