@@ -1,13 +1,15 @@
 #!/usr/bin/bash
 
 i=1
+j=6
 
+k=$($i+$j)
 # the number 4 can be the limit to
 
 # iterate the loop
 
-while [ $i -ge 4 ];
+while [ $k -le 4 ];
 do
-echo $i
-((i--))
+echo $k
+((k++))
 done
