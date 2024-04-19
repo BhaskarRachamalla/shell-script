@@ -15,4 +15,4 @@ echo "the subtraction of two numbers is:$subtract"
 
 number=("1" "2" "3" "4" "5")
 
-echo "additon of numbers:${number=([0]+[4])}"
+echo "additon of numbers:${number=(([0]+[4]))}"
