@@ -1,9 +1,7 @@
 #!/usr/bin/bash
 
-a=7
-while [ $a -gt 4 ];
+file=temp.txt
+while read -r line;
 do
-echo $a
-((a–))
-done
-echo “Out of the loop”
+echo $line
+done < “$file”
