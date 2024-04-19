@@ -9,7 +9,7 @@ k=$(($i+$j))
 # iterate the loop
 echo "the sum of $i and $j is:$k"
 
-while [ $k -le 4 ];
+while [ $k -le 100 ];
 do
 
 echo $k
