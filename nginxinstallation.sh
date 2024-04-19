@@ -32,6 +32,6 @@ else
 fi
 
 dnf module list
-if [ $? -ne 0 ]
+if [ $? -eq 0 ]
 then echo "list of available packages"
 fi
