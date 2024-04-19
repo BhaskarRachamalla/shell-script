@@ -25,3 +25,13 @@ then
 else
     echo "installation of mysql is success.."
 fi
+
+dnf install git -y
+
+if [ $? -ne 0 ]
+then 
+    echo "installtion of git is failure.."
+else 
+    echo "installion of git is success..."
+
+    
