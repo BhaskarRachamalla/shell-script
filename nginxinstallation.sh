@@ -30,3 +30,8 @@ then
 else
    echo "nginx removed"
 fi
+
+dnf module list
+if [ $? -ne 0 ]
+then echo "list of available packages"
+fi
