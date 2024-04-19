@@ -13,6 +13,6 @@ echo "the subtraction of two numbers is:$subtract"
 #read -s PASS
 #echo "password is $PASS"
 
-number=(1,2,3,4,5)
+number=("1" "2" "3" "4" "5")
 
 echo "additon of numbers:${number[0]}"
