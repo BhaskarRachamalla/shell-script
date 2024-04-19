@@ -3,7 +3,7 @@
 i=1
 j=6
 
-k=$($i+$j)
+k=$(($i+$j))
 # the number 4 can be the limit to
 
 # iterate the loop
