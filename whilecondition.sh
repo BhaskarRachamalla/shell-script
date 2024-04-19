@@ -11,6 +11,7 @@ echo "the sum of $i and $j is:$k"
 
 while [ $k -le 4 ];
 do
+((k++))
 echo $k
-((k--))
+
 done
