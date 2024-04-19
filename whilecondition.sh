@@ -6,7 +6,7 @@ i=1
 
 # iterate the loop
 
-while [ $i -le 4 ];
+while [ $i -ge 4 ];
 do
 echo $i
 ((i++))
