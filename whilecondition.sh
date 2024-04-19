@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-file=temp.txt
+file=tmp.txt
 while read -r line;
 do
 echo $line
