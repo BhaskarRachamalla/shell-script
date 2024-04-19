@@ -28,5 +28,5 @@ if [ $? -ne 0 ]
 then 
    echo "need to remove nginx"
 else
-   echo "nginx not removed"
+   echo "nginx removed"
 fi
