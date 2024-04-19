@@ -9,7 +9,7 @@ echo "the subtraction of two numbers is:$subtract"
 
 read  USER
 echo "user name is $USER"
-read -e PASS
+read -s PASS
 echo "password is $PASS"
 
 
