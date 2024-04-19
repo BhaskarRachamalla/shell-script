@@ -15,6 +15,6 @@ echo "the subtraction of two numbers is:$subtract"
 
 number=("1" "2" "3" "4" "5")
 
-add="${number[0]}+${number[4]}"
+add="$((${number[0]}+${number[4]}))"
 
 echo "addition of number is:$add"
