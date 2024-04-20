@@ -15,7 +15,6 @@ else
       echo "$2..success"
 fi
 
-
 }
 
 if [ $USERid -ne 0 ]
@@ -28,12 +27,12 @@ fi
 
 dnf install mysql -y 
 
-X $? "installating mysql"
+
 
 echo "install git"
 dnf install git -y 
 
-X $? "installating git"
+X "installating mysql" $?
 
     
 
