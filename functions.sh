@@ -6,12 +6,13 @@ echo "install mysql"
 
 USERid=$(id -u)
 X(){
-      if [ $1 -ne 0]
-      then
+
+if [ $1 -ne 0 ]
+then
       echo "$2...failure"
-      else
+else
       echo "$1..success"
-      fi
+fi
 
 }
 
