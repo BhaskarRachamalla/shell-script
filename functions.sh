@@ -33,8 +33,9 @@ echo "install git"
 dnf install git -y
 VALIDATE $? "installing git"
 
-dnf remove mysql -y
-VALIDATE $? "removing of mysql is:"
+
+
+
 
 
 
