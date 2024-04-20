@@ -16,6 +16,7 @@ x(){
     echo "$2:is wrong"
     else 
     echo "$2:is correct"
+    fi
 }
 
 if [ $k -ge 100 ]
