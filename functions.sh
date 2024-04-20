@@ -9,10 +9,10 @@ X(){
 
 if [ $1 -ne 0 ]
 then
-      echo "$2...failure"
+      echo "$1...failure"
       exit 1
 else
-      echo "$1..success"
+      echo "$2..success"
 fi
 
 }
