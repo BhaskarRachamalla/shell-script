@@ -3,7 +3,7 @@
 echo "install mysql"
 
 TIME=$(date +%F-%H-%M-%S)
-SCRIPTNAME=$($0|cut -d '.' -f1)
+SCRIPTNAME=$($0 | cut -d '.' -f1)
 LOGFILE=/tmp/$SCRIPTNAME-$TIME.log
 USERid=$(id -u)
 VALIDATE(){
