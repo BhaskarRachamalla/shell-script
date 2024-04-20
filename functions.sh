@@ -35,3 +35,14 @@ dnf install git -y
 X $? "installating git"
 
     
+y(){
+    if [ $? -eq 0 ]
+    then
+    echo "$3"
+    fi
+}
+
+dnf remove mysql -y
+
+y "removing mysql"
+
