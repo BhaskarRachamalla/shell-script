@@ -10,6 +10,7 @@ X(){
 if [ $1 -ne 0 ]
 then
       echo "$2...failure"
+      exit 1
 else
       echo "$1..success"
 fi
@@ -19,7 +20,7 @@ fi
 if [ $USERid -ne 0 ]
 then 
     echo "you dont have access to root"
-    
+    exit 1    
 else
     echo "your are super user"
 fi 
@@ -28,6 +29,7 @@ dnf install mysql -y
 
 X $? "installating mysql"
 
+echo "install git"
 dnf install git -y 
 
 X $? "installating git"
