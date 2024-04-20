@@ -15,6 +15,7 @@ else
       echo "$2..success"
 fi
 
+
 }
 
 if [ $USERid -ne 0 ]
@@ -35,14 +36,5 @@ dnf install git -y
 X $? "installating git"
 
     
-y(){
-    if [ $1 -eq 0 ]
-    then
-    echo "$3"
-    fi
-}
 
-#dnf remove mysql -y
-
-y "removing mysql"
 
