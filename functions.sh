@@ -5,7 +5,7 @@ echo "install mysql"
 
 
 USERid=$(id -u)
-X(){
+VALIDATE(){
 
 if [ $1 -ne 0 ]
 then
@@ -26,12 +26,12 @@ else
 fi 
 
 dnf install mysql -y
-X $? "installing mysql"
+VALIDATE $? "installing mysql"
 
 echo "install git"
 
 dnf install git -y
-X $? "installing git"
+VALIDATE $? "installing git"
 
 
 
