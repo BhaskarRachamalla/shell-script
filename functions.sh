@@ -7,12 +7,12 @@ echo "install mysql"
 USERid=$(id -u)
 X(){
 
-if [ $2 -ne 0 ]
+if [ $1 -ne 0 ]
 then
-      echo "$1...failure"
+      echo "$2...failure"
       exit 1
 else
-      echo "$2..success"
+      echo "$1..success"
 fi
 
 }
@@ -26,12 +26,12 @@ else
 fi 
 
 dnf install mysql -y
-X "installating mysql" $?
+X $? "installing mysql"
 
 echo "install git"
 
 dnf install git -y
-X "installating git" $?
+X $? "installing git"
 
 
 
