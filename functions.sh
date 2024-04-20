@@ -3,7 +3,7 @@
 echo "install mysql"
 
 TIME=$(date +%F-%H-%M-%S)
-SCRIPTNAME=$($0 | cut -d "." -f1)
+SCRIPTNAME=$(echo $0 | cut -d "." -f1)
 LOGFILE=/tmp/$SCRIPTNAME-$TIME.log
 USERid=$(id -u)
 VALIDATE(){
@@ -26,12 +26,12 @@ else
     echo "your are super user"
 fi 
 
-dnf install mysql -y>>$LOGFILE
+dnf install mysql -y &>>$LOGFILE
 VALIDATE $? "installing mysql"
 
 echo "install git"
 
-dnf install git -y>>$LOGFILE
+dnf install git -y &>>$LOGFILE
 VALIDATE $? "installing git"
 
 
