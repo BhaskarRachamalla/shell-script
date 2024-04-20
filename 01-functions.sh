@@ -11,7 +11,11 @@ echo "the sum of two numbers $i and $j is:$k"
 
 x(){
 
-    echo "program is correct and exit value is:$1"
+    if [ $1 -ne 0]
+    then
+    echo "$2:is wrong"
+    else 
+    echo "$2:is correct"
 }
 
 if [ $k -ge 100 ]
@@ -22,4 +26,4 @@ echo "second class"
 fi
 
 
-x $? 
+x $? "programm"
