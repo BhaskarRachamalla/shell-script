@@ -7,7 +7,8 @@ echo "install mysql"
 USERid=$(id -u)
 
 function(){
-       echo "some message $1"
+       echo "exit status: $1"
+       echo "what are you doing: $2"
 }
 
 if [ $USERid -ne 0 ]
@@ -20,6 +21,6 @@ fi
 
 dnf install mysql -y 
 
-function $1
+function $? "installating mysql"
 
     
