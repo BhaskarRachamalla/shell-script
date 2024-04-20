@@ -42,7 +42,7 @@ y(){
     fi
 }
 
-dnf remove mysql -y
+#dnf remove mysql -y
 
 y "removing mysql"
 
