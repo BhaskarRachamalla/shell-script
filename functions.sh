@@ -12,7 +12,7 @@ then
       echo "$2...failure"
       exit 1
 else
-      echo "$1..success"
+      echo "$2..success"
 fi
 
 }
