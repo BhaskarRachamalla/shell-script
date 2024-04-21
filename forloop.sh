@@ -10,7 +10,7 @@ USERID=$(id -u)
 
 TIME=$(date +%F-%H-%M-%S)
 script=$($0 | cut -d '.' -f1)
-LOG=/var/tmp/$TIME_$script
+LOG=/var/tmp/$script_$TIME
 
 if [ $USERID -ne 0 ]
 then
