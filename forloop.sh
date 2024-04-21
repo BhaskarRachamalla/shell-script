@@ -26,9 +26,9 @@ fi
 validate(){
 if [ $1 -ne 0 ]
 then 
-echo "$2...$R failure $N"
+echo -e "$2...$R failure $N"
 else 
-echo "$2..$G success $N"
+echo -e "$2..$G success $N"
 fi
 }
 
