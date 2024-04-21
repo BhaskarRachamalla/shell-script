@@ -21,6 +21,7 @@ then
 echo "$2...failure"
 else 
 echo "$2..success"
+fi
 }
 
 dnf remove mysql -y
