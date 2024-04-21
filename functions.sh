@@ -9,7 +9,7 @@ USERid=$(id -u)
 VALIDATE(){
 
 R="\e[31m"
-G="\e[33m"
+G="\e[32m"
 N="\[0m"
 
 if [ $1 -ne 0 ]
