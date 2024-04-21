@@ -16,7 +16,7 @@ echo "your are super user"
 fi
 
 validate(){
-    if [ $? -ne o ]
+if [ $1 -ne 0 ]
 then 
 echo "$2...failure"
 else 
