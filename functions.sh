@@ -10,7 +10,7 @@ VALIDATE(){
 
 R="\e[31m"
 G="\e[32m"
-N="\[0m"
+N="\e[0m"
 
 if [ $1 -ne 0 ]
 then
