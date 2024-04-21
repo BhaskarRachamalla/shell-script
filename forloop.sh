@@ -15,6 +15,15 @@ else
 echo "your are super user"
 fi
 
+validate(){
+    if [ $? -ne o ]
+then 
+echo "$2...failure"
+else 
+echo "$2..success"
+}
 
 dnf remove mysql -y
-dnf remove mysql -y
+validate $? "mysql removing is:"
+dnf remove git -y
+validate $? "git removing is:"
