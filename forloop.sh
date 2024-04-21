@@ -8,6 +8,10 @@
 
 USERID=$(id -u)
 
+TIME=$(date +%F-%H-%M-%S)
+script=$($0 | cut -d '.' -f1)
+LOG=/var/tmp/$TIME_$script
+
 if [ $USERID -ne 0 ]
 then
 echo "your not super user, run with super user"
@@ -24,7 +28,7 @@ echo "$2..success"
 fi
 }
 
-dnf remove mysql -y
+dnf remove mysql -y $>>$LOG
 validate $? "mysql removing is:"
-dnf remove git -y
+dnf remove git -y $>>$LOG
 validate $? "git removing is:"
