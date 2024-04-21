@@ -8,7 +8,7 @@
 
 USERID=$(id -u)
 
-if [ USERID -ne 0]
+if [ USERID -eq 0]
 then
 echo "your not super user, run with super user"
 else 
