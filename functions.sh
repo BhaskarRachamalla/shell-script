@@ -8,12 +8,16 @@ LOGFILE=/tmp/$SCRIPTNAME-$TIME.log
 USERid=$(id -u)
 VALIDATE(){
 
+R="\e[31m"
+G="\e[33m"
+N="\[0m"
+
 if [ $1 -ne 0 ]
 then
-      echo "$2...failure"
+      echo -e "$2...$R failure $N"
       exit 1
 else
-      echo "$2..success"
+      echo -e "$2..$G success $N"
 fi
 
 }
