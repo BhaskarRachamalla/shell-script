@@ -10,7 +10,7 @@ USERID=$(id -u)
 
 TIME=$(date +%F-%H-%M-%S)
 script=$(echo "$0" | cut -d '.' -f1)
-LOG=/var/tmp/$script_$TIME.log
+LOG=/var/tmp/$script-$TIME.log
 
 R="\e[31m"
 G="\e[32m"
